@@ -15,9 +15,14 @@
     <owl:Ontology rdf:about="https://w3id.org/def/BACO_wine_ontology_2023">
         <dc:creator>David Delgado Camacho</dc:creator>
         <dc:creator>Pablo Pimàs Verge</dc:creator>
+        <dc:description>BACO Spanish Wine Ontology, by David Delgado Camacho and Pablo Pimàs Verge based on the  Kagle: Spanish Wine Quality Dataset from Fedesoriano.</dc:description>
         <dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license>
-        <rdfs:comment xml:lang="en">BACO Spanish Wine Ontology, by David Delgado Camacho and Pablo Pimàs Verge based on the  Kagle: Spanish Wine Quality Dataset from Fedesoriano.</rdfs:comment>
-        <rdfs:label xml:lang="en">BACO Wine ontology</rdfs:label>
+        <dc:questions>- What region produces the most expensive wines?
+- What body does an specific wine has in terms of complete, light or medium?
+- Which are the most economic wines?
+- Which wines has been reviews over ten thousend times already?
+- Which wines has been paired with Salmon?</dc:questions>
+        <dc:title>BACO Wine ontology</dc:title>
     </owl:Ontology>
     
 
@@ -39,9 +44,27 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/questions -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/questions"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
