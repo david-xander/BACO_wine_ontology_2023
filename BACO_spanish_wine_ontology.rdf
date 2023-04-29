@@ -1,0 +1,2532 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/def/BACO_wine_ontology_2023"
+     xml:base="https://w3id.org/def/BACO_wine_ontology_2023"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:baco-spanish-wine-ontology="https://w3id.org/def/BACO_wine_ontology_2023#">
+    <owl:Ontology rdf:about="https://w3id.org/def/BACO_wine_ontology_2023">
+        <dc:creator>David Delgado Camacho</dc:creator>
+        <dc:creator>Pablo Pimàs Verge</dc:creator>
+        <dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license>
+        <rdfs:comment xml:lang="en">BACO Spanish Wine Ontology, by David Delgado Camacho and Pablo Pimàs Verge based on the  Kagle: Spanish Wine Quality Dataset from Fedesoriano.</rdfs:comment>
+        <rdfs:label xml:lang="en">BACO Wine ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#allocateWine -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#allocateWine">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#producedIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:comment>Inverse relationship of producedIn. A Region allocates different Wines</rdfs:comment>
+        <rdfs:label>Allocate wine</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#allocateWinery -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#allocateWinery">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#producesIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+        <rdfs:comment>Inverse relationship of producesIn. A Region allocates a Winery</rdfs:comment>
+        <rdfs:label>Allocate winery</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#hasVariety -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#hasVariety">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#varietyHasWine"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety"/>
+        <rdfs:comment xml:lang="en">This object property refers to the specific grape variety or varieties used in the production of a wine, linking a wine instance to one or more grape varieties that were used in its production.</rdfs:comment>
+        <rdfs:label>Has variety</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#hasWine -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#hasWine">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#hasWineType"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineType"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:comment>Inverse relationship of hasWineType</rdfs:comment>
+        <rdfs:label>Has wine</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#hasWineType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#hasWineType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineType"/>
+        <rdfs:comment xml:lang="en">This object property is used in the context of wines to describe the type or style of a wine. It links a wine to its corresponding wine type, such as red, white, or rosé. It is a useful property for categorizing and searching for wines based on their style or type.</rdfs:comment>
+        <rdfs:label>Has wine type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#isPairedWith -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#isPairedWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#pairsWith"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Food"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:comment>Inverse relationship of pairsWith</rdfs:comment>
+        <rdfs:label>Is paired with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#makes -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#makes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#producedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:comment>Inverse realtionship of producedBy</rdfs:comment>
+        <rdfs:label>Makes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#pairsWith -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#pairsWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Food"/>
+        <rdfs:comment xml:lang="en">This is an object property that relates a food item to a wine that is known to complement its flavor. It can be used to suggest a suitable wine pairing based on the characteristics of the food, such as its ingredients, texture, and preparation method.</rdfs:comment>
+        <rdfs:label>Pairs with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#producedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#producedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+        <rdfs:comment xml:lang="en">This object property indicates the winery that produces a particular wine. It relates a wine to a winery, where the winery is the subject and the wine is the object.</rdfs:comment>
+        <rdfs:label>Produced by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#producedIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#producedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <rdfs:comment xml:lang="en">This object property represents the relationship between a winery and a geographic location where the wine is produced. This property is used to link a winery with the wine regions where its wines are made.</rdfs:comment>
+        <rdfs:label>Produced in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#producesIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#producesIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <rdfs:comment xml:lang="en">This object property is used to describe the relationship between a winery and a region where the winery produces wine. It links the Winery class to the Region class, indicating the region where the wine is produced.</rdfs:comment>
+        <rdfs:label>Produces in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#varietyHasWine -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#varietyHasWine">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:comment>Inverse relationship of hasWineType</rdfs:comment>
+        <rdfs:label>Variety has wine</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#entityName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#entityName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Any entity can be expressed by its name</rdfs:comment>
+        <rdfs:label>Entity name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#foodName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#foodName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the name of the food. There can be many of theese names for one entity.</rdfs:comment>
+        <rdfs:label>Food name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#grapeVarietyName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#grapeVarietyName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The name of a grape variety that acts as an ingredient of a Wine entity</rdfs:comment>
+        <rdfs:label>Grape variety name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#regionName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#regionName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Name of the Region where Wine is produced</rdfs:comment>
+        <rdfs:label>Region name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#typeName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#typeName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Name of the type of Wine produced (Red, White, Sparkling, Fortified... )</rdfs:comment>
+        <rdfs:label>Type name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#wineAcidity -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#wineAcidity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>Acidity score, defined as wine&apos;s “pucker” or tartness; it&apos;s what makes a wine refreshing and your tongue salivate and want another sip [from 1-5]</rdfs:comment>
+        <rdfs:label>Wine acidity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#wineBody -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#wineBody">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>Body score, defined as the richness and weight of the wine in your mouth [from 1-5]</rdfs:comment>
+        <rdfs:label>Wine body</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#wineName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#wineName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The name of the product made by the winery</rdfs:comment>
+        <rdfs:label>Wine name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#winePrice -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#winePrice">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>Represents the Wine price in EUR</rdfs:comment>
+        <rdfs:label>Wine price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#wineRating -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#wineRating">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</xsd:minExclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>Represents the average rating given to the wine by the users [from 1-5]</rdfs:comment>
+        <rdfs:label>Wine rating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#wineReviews -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#wineReviews">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents the number of users that reviewed the wine</rdfs:comment>
+        <rdfs:label>Wine reviews</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#wineVintage -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#wineVintage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Year in which the grapes were harvested</rdfs:comment>
+        <rdfs:label>Wine vintage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#wineryName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#wineryName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Winery name that produces the Wine</rdfs:comment>
+        <rdfs:label>Winery name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Acidity -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Acidity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:comment xml:lang="en">It refers to the perceived acidity in a wine, which is typically expressed on a scale from low to high or as a specific pH value. It also specifies that acidity is measured by the amount of total titratable acidity, usually expressed in grams per litre of wine.</rdfs:comment>
+        <rdfs:label>Acidity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Body -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Body">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:comment xml:lang="en">The wine body refers to the perceived weight or fullness of a wine in the mouth, which is influenced by factors such as grape variety, alcohol content, and ageing conditions. It also specifies that wine bodies can range from light-bodied to full-bodied wines.</rdfs:comment>
+        <rdfs:label>Body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#CompleteBodyWine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#CompleteBodyWine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Body"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#LightBodyWine"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#MediumBodyWine"/>
+        <rdfs:comment xml:lang="en">A full-bodied wine has a rich and robust taste, with a higher alcohol content and more intense flavors. These wines have a heavier texture and mouthfeel, making them perfect for pairing with bold and hearty dishes such as steak or roasted vegetables.</rdfs:comment>
+        <rdfs:label>Complete body wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#EconomicWine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#EconomicWine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Price"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#ExpensiveWine"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#PricyWine"/>
+        <rdfs:comment xml:lang="en">Wines with price less than 60</rdfs:comment>
+        <rdfs:label>Economic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#ExpensiveWine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#ExpensiveWine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Price"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#PricyWine"/>
+        <rdfs:comment xml:lang="en">Wines with price starting from 300</rdfs:comment>
+        <rdfs:label>Expensive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#ExpensiveWineRegion -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#ExpensiveWineRegion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <rdfs:comment>An exclusive wine region producing high-quality wines with prices typically above average, often due to its unique geographical or climatic characteristics.</rdfs:comment>
+        <rdfs:label>Expensive wine region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Fish -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Fish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#SeaFood"/>
+        <rdfs:comment xml:lang="en">Fish is a class of aquatic creatures that are commonly used as food. They typically have a mild flavor and tender texture, making them a popular choice for cooking. There are many different species of fish that can be used in a variety of dishes, such as sushi, fish and chips, and grilled fish.</rdfs:comment>
+        <rdfs:label>Fish</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Fish_as_food</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Food -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Food">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#foodName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineEntity"/>
+        <rdfs:comment xml:lang="en">Food items that can be paired with wines to enhance the tasting experience. It also explains that the process of food pairing with wine involves selecting a dish that complements or contrasts the wine&apos;s flavour, aroma, and body</rdfs:comment>
+        <rdfs:label>Food</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/Food</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#grapeVarietyName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineEntity"/>
+        <rdfs:comment xml:lang="en">A grape variety represents a specific type of grape used in the production of wine. Grape varieties have distinct characteristics, such as flavour, colour, and aroma, that influence the taste and style of the wine. Different grape varieties are better suited to specific climates and soil types, which can affect their growth and quality.</rdfs:comment>
+        <rdfs:label>Grape Variety</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Category:Grape_varieties</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#HighAcidityWine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#HighAcidityWine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Acidity"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#LowAcidityWine"/>
+        <rdfs:comment xml:lang="en">Wines with acidity higher than 3</rdfs:comment>
+        <rdfs:label>High acidity wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#HighRatedWine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#HighRatedWine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Rating"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#VeryHighRatedWine"/>
+        <rdfs:comment xml:lang="en">High rated wine refers to a wine that has received a high score or rating from wine critics or experts based on various factors such as taste, aroma, body, and complexity.</rdfs:comment>
+        <rdfs:label>High rated wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#LightBodyWine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#LightBodyWine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Body"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#MediumBodyWine"/>
+        <rdfs:comment xml:lang="en">A light body wine is characterized by its lower alcohol content, mild taste, and refreshing finish. Typically paired with lighter dishes, such as salads, seafood, and poultry, it provides a perfect complement to meals without overwhelming the palate.&quot;</rdfs:comment>
+        <rdfs:label>Light body wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#LowAcidityWine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#LowAcidityWine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Acidity"/>
+        <rdfs:comment xml:lang="en">Wines with acidity lower or equal to 3</rdfs:comment>
+        <rdfs:label>Low acidity wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#MediumBodyWine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#MediumBodyWine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Body"/>
+        <rdfs:comment xml:lang="en">Medium body wine is a type of wine that falls in between light and full-bodied wines. It typically has a moderate alcohol content and a balance of flavor and texture, making it a versatile wine that can pair well with a range of foods.</rdfs:comment>
+        <rdfs:label>medium body wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#NumberOfReviews -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#NumberOfReviews">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:comment>The total number of reviews given to a wine by critics or industry specialists.</rdfs:comment>
+        <rdfs:label>Number of reviews</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#OverTenThousendReviewsWine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#OverTenThousendReviewsWine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#NumberOfReviews"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#UnderFortyReviewsWine"/>
+        <rdfs:comment>Wines with more than 10000 reviews</rdfs:comment>
+        <rdfs:label>Over ten thousand reviews wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#PairedWithRedMeatWine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#PairedWithRedMeatWine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Pairing"/>
+        <rdfs:comment>Wine that can be paired with red meat</rdfs:comment>
+        <rdfs:label>Wine paired with red meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#PairedWithSalmonWine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#PairedWithSalmonWine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Pairing"/>
+        <rdfs:comment xml:lang="en">Salmon pairs well with a variety of wines, but typically lighter-bodied white wines or medium-bodied red wines such as Pinot Noir. The flavors of the wine should complement the flavors of the salmon, creating a balanced and enjoyable pairing experience.</rdfs:comment>
+        <rdfs:label>Wine paired with salmon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Pairing -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Pairing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:comment xml:lang="en">Pairing is the art of combining food and wine to enhance the flavors and create a harmonious dining experience. The right pairing can elevate a dish to a whole new level and make the wine taste even better. It&apos;s all about finding the perfect balance between the food and the wine to create a truly memorable meal.</rdfs:comment>
+        <rdfs:label>Pairing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Price -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Price">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:comment xml:lang="en">The wine price represents the cost of a bottle of wine in a particular currency. Wine prices can vary widely depending on factors such as grape variety, winemaking techniques, ageing, and the reputation of the producer or region. Wine prices can also be influenced by external factors such as supply and demand, economic conditions, and exchange rates.</rdfs:comment>
+        <rdfs:label>Price</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#PricyWine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#PricyWine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Price"/>
+        <rdfs:comment xml:lang="en">Wines with price equals to 60 but less than 300</rdfs:comment>
+        <rdfs:label>Pricy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Rating -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Rating">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <rdfs:comment>This property is used to indicate the quality or rating of a particular wine, usually on a scale from 0 to 5. This rating can be given by various wine critics or publications and is used as a guide to help consumers make informed choices when purchasing wine.</rdfs:comment>
+        <rdfs:label>Rating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#RedMeat -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#RedMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Food"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#SeaFood"/>
+        <rdfs:comment xml:lang="en">Red meat is a food category that includes various types of meat, such as beef, lamb, and pork, which are typically red or dark in color when raw. These meats are often considered rich in protein and iron, and are commonly paired with full-bodied red wines to complement their flavors.</rdfs:comment>
+        <rdfs:label>Red meat</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Red_meat</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Region -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Region">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#regionName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineEntity"/>
+        <rdfs:comment xml:lang="en">A WineRegion represents a specific geographical area known for wine production, characterised by its unique climate, soil, and topography. Each region may have distinct regulations and wine styles, and it can contain multiple subregions and wineries.</rdfs:comment>
+        <rdfs:label>Region</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/WineRegion</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Salmon -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Salmon">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Fish"/>
+        <rdfs:comment xml:lang="en">Salmon is a type of fish that is native to the North Atlantic and Pacific Oceans and is known for its delicate flavor, rich texture, and versatility in cooking. It is commonly grilled, baked, or smoked, and is a popular ingredient in salads, sushi, and other dishes. Salmon is also a good source of omega-3 fatty acids, protein, and other nutrients.</rdfs:comment>
+        <rdfs:label>Salmon</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Salmon_as_food</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#SeaFood -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#SeaFood">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Food"/>
+        <rdfs:comment xml:lang="en">Seafood refers to a wide range of edible sea creatures, including fish, shellfish, and other marine animals. These dishes are often enjoyed for their unique flavors and health benefits, such as being low in fat and high in protein. From grilled fish to seafood paella, there are many delicious and nutritious ways to enjoy this culinary category.</rdfs:comment>
+        <rdfs:label>Sea food</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Seafood</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#UnderFortyReviewsWine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#UnderFortyReviewsWine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#NumberOfReviews"/>
+        <rdfs:comment>Wines with less than 40 reviews</rdfs:comment>
+        <rdfs:label>Under forty reviews wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#VeryHighRatedWine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#VeryHighRatedWine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Rating"/>
+        <rdfs:comment>Medium rated wine refers to a wine that has received a score or rating in the middle of the rating scale, usually indicating a good but not exceptional quality. It may be a versatile choice for pairing with different types of food or enjoyed on its own.</rdfs:comment>
+        <rdfs:label>Very high rated wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Wine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Wine">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#wineName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#hasVariety"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#pairsWith"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Food"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#hasWineType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#producedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#producedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Wine is an alcoholic beverage made from fermented grapes. It can vary greatly in flavor, color, and texture depending on factors such as grape variety, region, and winemaking techniques. Wines are commonly classified into categories such as red, white, rosé, and sparkling based on their color and carbonation level.</rdfs:comment>
+        <rdfs:label>Wine</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/Wine</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#WineEntity -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#WineEntity">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#entityName"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license>
+        <rdfs:comment xml:lang="en">The root class representing the most general concept related to the wine domain.</rdfs:comment>
+        <rdfs:label>Wine entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#WineType -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#WineType">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#typeName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineEntity"/>
+        <rdfs:comment xml:lang="en">Wine type represents the style or category of a wine based on its characteristics, such as flavour, colour, and aroma. Wine types can vary widely depending on factors such as the grape varieties used, the region where the wine is produced, and the winemaking techniques employed.</rdfs:comment>
+        <rdfs:label>Wine type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Winery -->
+
+    <owl:Class rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Winery">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#wineryName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#producesIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Winery is a physical place where grapes are crushed, fermented and bottled into wine. This class represents a wine-producing facility and may include facilities such as vineyards, tasting rooms and bottling lines. Wineries can produce a wide variety of wines depending on the types of grapes they grow and the production techniques they use.</rdfs:comment>
+        <rdfs:label>Winery</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/ontology/Winery</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#AlvaroPalacios -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#AlvaroPalacios">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+        <baco-spanish-wine-ontology:producesIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Priorato"/>
+        <baco-spanish-wine-ontology:producesIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Rioja"/>
+        <baco-spanish-wine-ontology:wineryName>Alvaro Palacios</baco-spanish-wine-ontology:wineryName>
+        <rdfs:comment>AlvaroPalacios is a winery located in the Priorat region of Spain, known for producing high-quality wines using traditional methods.</rdfs:comment>
+        <rdfs:label>Alvaro Palacios</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Artadi -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Artadi">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+        <baco-spanish-wine-ontology:wineryName>Artadi</baco-spanish-wine-ontology:wineryName>
+        <rdfs:comment>Artadi is a renowned Spanish winery located in the Rioja Alavesa region, producing high-quality wines with a focus on the Tempranillo grape.</rdfs:comment>
+        <rdfs:label>Artadi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Atlantic -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Atlantic">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Salmon"/>
+        <baco-spanish-wine-ontology:foodName>Atlantic Salmon</baco-spanish-wine-ontology:foodName>
+        <rdfs:comment>Atlantic salmon is a species of fish native to the North Atlantic Ocean, commonly used as a food source. Known for its rich flavor and high omega-3 fatty acid content, it pairs well with various wines in culinary dishes.</rdfs:comment>
+        <rdfs:label>Atlantic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Bierzo -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Bierzo">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <baco-spanish-wine-ontology:regionName>Bierzo</baco-spanish-wine-ontology:regionName>
+        <rdfs:comment>Bierzo is a Spanish wine region known for producing high-quality red wines made from the Mencía grape.</rdfs:comment>
+        <rdfs:label>Bierzo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#BodegasElNido -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#BodegasElNido">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+        <baco-spanish-wine-ontology:producesIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Jumilla"/>
+        <baco-spanish-wine-ontology:wineryName>Bodegas El Nido</baco-spanish-wine-ontology:wineryName>
+        <rdfs:comment>Bodegas El Nido is a Spanish winery located in the Jumilla region, known for producing high-quality, full-bodied red wines from the Monastrell grape variety</rdfs:comment>
+        <rdfs:label>Bodegas el Niño</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Cataluna -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Cataluna">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <baco-spanish-wine-ontology:regionName>Cataluña</baco-spanish-wine-ontology:regionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Cava -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Cava">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <baco-spanish-wine-ontology:regionName>Cava</baco-spanish-wine-ontology:regionName>
+        <rdfs:comment>Denomination of Origin for sparkling wines produced in the traditional method in Catalonia, Spain.</rdfs:comment>
+        <rdfs:label>Cava</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#CavaType -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#CavaType">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineType"/>
+        <baco-spanish-wine-ontology:typeName>Cava</baco-spanish-wine-ontology:typeName>
+        <rdfs:comment>Cava type refers to the classification of sparkling wine produced in the Cava region of Spain using traditional methods</rdfs:comment>
+        <rdfs:label>Cava type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Chinook -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Chinook">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Salmon"/>
+        <baco-spanish-wine-ontology:foodName>Chinook Salmon</baco-spanish-wine-ontology:foodName>
+        <rdfs:comment>Salmon Chinook is a species of Pacific salmon known for its large size and distinctive flavor. It is highly prized for its firm, rich flesh and is commonly used in gourmet cuisine. This species typically grows to be quite large, reaching up to 100 pounds, and is found primarily in the North Pacific Ocean and its tributaries.</rdfs:comment>
+        <rdfs:label>Chinook</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#DominiodePingus -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#DominiodePingus">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+        <baco-spanish-wine-ontology:producesIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#RiberadelDuero"/>
+        <baco-spanish-wine-ontology:wineryName>Dominios de Pingus</baco-spanish-wine-ontology:wineryName>
+        <rdfs:comment>Dominio de Pingus refers to a Spanish winery known for producing high-quality wines in the Ribera del Duero region</rdfs:comment>
+        <rdfs:label>Dominio de Pingus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#DonPXConventoSeleccion -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#DonPXConventoSeleccion">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <baco-spanish-wine-ontology:hasVariety rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#PedroXimenez"/>
+        <baco-spanish-wine-ontology:hasWineType rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#PedroXimenezType"/>
+        <baco-spanish-wine-ontology:pairsWith rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Atlantic"/>
+        <baco-spanish-wine-ontology:producedBy rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#ToroAlbala"/>
+        <baco-spanish-wine-ontology:producedIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#MontillaMoriles"/>
+        <baco-spanish-wine-ontology:wineAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</baco-spanish-wine-ontology:wineAcidity>
+        <baco-spanish-wine-ontology:wineBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</baco-spanish-wine-ontology:wineBody>
+        <baco-spanish-wine-ontology:wineName>Don PX Convento Selección</baco-spanish-wine-ontology:wineName>
+        <baco-spanish-wine-ontology:winePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">350.00</baco-spanish-wine-ontology:winePrice>
+        <baco-spanish-wine-ontology:wineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</baco-spanish-wine-ontology:wineRating>
+        <baco-spanish-wine-ontology:wineReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">398</baco-spanish-wine-ontology:wineReviews>
+        <baco-spanish-wine-ontology:wineVintage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1946</baco-spanish-wine-ontology:wineVintage>
+        <rdfs:comment xml:lang="en">Don PX Convento Selección is a sweet dessert wine produced in MontillaMoriles, Spain, made from Pedro Ximénez grapes that are sun-dried and aged in American oak barrels for decades, resulting in a rich and complex wine with notes of raisins, figs, coffee, and caramel.</rdfs:comment>
+        <rdfs:label>Don PX Convento Seleccion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Dry -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Dry">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineType"/>
+        <baco-spanish-wine-ontology:typeName>Dry</baco-spanish-wine-ontology:typeName>
+        <rdfs:comment>Dry wine is a type of wine that contains very little residual sugar, resulting in a less sweet taste. Typically, the sugar content in dry wine is less than 1 gram per liter. This type of wine is often preferred by those who enjoy a more acidic and less sweet taste profile.</rdfs:comment>
+        <rdfs:label>Dry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#ElCarretil -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#ElCarretil">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <baco-spanish-wine-ontology:hasVariety rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Tempranillo"/>
+        <baco-spanish-wine-ontology:hasWineType rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#TempranilloType"/>
+        <baco-spanish-wine-ontology:pairsWith rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Chinook"/>
+        <baco-spanish-wine-ontology:producedBy rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Artadi"/>
+        <baco-spanish-wine-ontology:producedIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#VinodeEspana"/>
+        <baco-spanish-wine-ontology:wineAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</baco-spanish-wine-ontology:wineAcidity>
+        <baco-spanish-wine-ontology:wineBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</baco-spanish-wine-ontology:wineBody>
+        <baco-spanish-wine-ontology:wineName>El Carretil</baco-spanish-wine-ontology:wineName>
+        <baco-spanish-wine-ontology:winePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">143.51</baco-spanish-wine-ontology:winePrice>
+        <baco-spanish-wine-ontology:wineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</baco-spanish-wine-ontology:wineRating>
+        <baco-spanish-wine-ontology:wineReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</baco-spanish-wine-ontology:wineReviews>
+        <baco-spanish-wine-ontology:wineVintage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2014</baco-spanish-wine-ontology:wineVintage>
+        <rdfs:comment>El carretil is a red wine produced by Artadi winery with Tempranillo grapes, known for its rich and complex flavors.</rdfs:comment>
+        <rdfs:label>El Carretil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Entrecot -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Entrecot">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#RedMeat"/>
+        <baco-spanish-wine-ontology:foodName>Entrecot</baco-spanish-wine-ontology:foodName>
+        <rdfs:comment>A prime cut of beef taken from the rib section, typically grilled or pan-fried and often served with sauces or seasonings.</rdfs:comment>
+        <rdfs:label>Entrecot</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#JerezAmontillado -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#JerezAmontillado">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <baco-spanish-wine-ontology:regionName>Jerez Amontillado</baco-spanish-wine-ontology:regionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#JerezOloroso -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#JerezOloroso">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <baco-spanish-wine-ontology:regionName>Jerez Oloroso</baco-spanish-wine-ontology:regionName>
+        <rdfs:comment>The region is known for its unique climate, with hot summers and cool winters, which creates ideal growing conditions for the Palomino and Pedro Ximenez grape varieties. The wine is aged in oak barrels, resulting in a complex flavor profile with notes of nuts, caramel, and dried fruit.</rdfs:comment>
+        <rdfs:label>Jerez Oloroso</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#JerezPaloCortado -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#JerezPaloCortado">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <baco-spanish-wine-ontology:regionName>Jerez Palo Cortado</baco-spanish-wine-ontology:regionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#JerezXeresSherry -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#JerezXeresSherry">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <baco-spanish-wine-ontology:regionName>JerezXeresSherry</baco-spanish-wine-ontology:regionName>
+        <rdfs:comment>Jerez is a wine region located in the southwestern part of Spain, known for producing the world-famous Sherry wine. The region has a warm Mediterranean climate and chalky soils that contribute to the unique character of the wines. Jerez is also home to a number of bodegas, some of which have been producing Sherry for centuries.</rdfs:comment>
+        <rdfs:label>Jerez Xerez Sherry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Jumilla -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Jumilla">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <baco-spanish-wine-ontology:regionName>Jumilla</baco-spanish-wine-ontology:regionName>
+        <rdfs:comment>Jumilla is a wine region located in southeastern Spain, known for producing full-bodied red wines made from the Monastrell grape.</rdfs:comment>
+        <rdfs:label>Jumilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#MontillaMoriles -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#MontillaMoriles">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <baco-spanish-wine-ontology:regionName>MontillaMoriles</baco-spanish-wine-ontology:regionName>
+        <rdfs:comment xml:lang="en">MontillaMoriles is a wine region in southern Spain, located in the province of Córdoba. The region is known for its production of fortified wines, including the famous Pedro Ximénez grapes, which are used to produce sweet wines with a rich, nutty flavor.</rdfs:comment>
+        <rdfs:label>Montilla Moriles</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Ordonez -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Ordonez">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+        <baco-spanish-wine-ontology:producesIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Rueda"/>
+        <baco-spanish-wine-ontology:producesIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Toro"/>
+        <baco-spanish-wine-ontology:wineryName>Ordoñez</baco-spanish-wine-ontology:wineryName>
+        <rdfs:comment>Ordoñez is a Spanish winery located in the Malaga region. It produces high-quality wines using traditional methods with a modern twist</rdfs:comment>
+        <rdfs:label>Ordonez</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Osborne -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Osborne">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+        <baco-spanish-wine-ontology:producesIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#JerezOloroso"/>
+        <baco-spanish-wine-ontology:producesIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#JerezXeresSherry"/>
+        <baco-spanish-wine-ontology:wineryName>Osborne</baco-spanish-wine-ontology:wineryName>
+        <rdfs:comment>Osborne is a brand of Spanish wines that has been producing high-quality wines for over two centuries. The winery is known for its deep-rooted traditions and unique production processes that result in exceptional wines. Osborne wines range from full-bodied reds to crisp whites and are made from a variety of grape varieties grown in the best wine regions of Spain.</rdfs:comment>
+        <rdfs:label>Osborne</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#PagodeCarraovejas -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#PagodeCarraovejas">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+        <baco-spanish-wine-ontology:producesIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#RiberadelDuero"/>
+        <baco-spanish-wine-ontology:wineryName>Pago de Carraovejas</baco-spanish-wine-ontology:wineryName>
+        <rdfs:comment>Pago de Carraovejas is a winery located in the Ribera del Duero region of Spain. It produces high-quality red wines using Tempranillo, Cabernet Sauvignon, and Merlot grapes.</rdfs:comment>
+        <rdfs:label>Pago de Carraovejas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#PedroXimenez -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#PedroXimenez">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety"/>
+        <baco-spanish-wine-ontology:grapeVarietyName>Pedro Ximenez</baco-spanish-wine-ontology:grapeVarietyName>
+        <rdfs:comment>Pedro Ximénez is a white grape variety primarily grown in Spain for sherry production, with raisin-like flavors due to the raisining of grapes.</rdfs:comment>
+        <rdfs:label>Pedro Ximenez</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#PedroXimenezType -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#PedroXimenezType">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineType"/>
+        <baco-spanish-wine-ontology:typeName>Pedro Ximenez</baco-spanish-wine-ontology:typeName>
+        <rdfs:comment>Pedro Ximenez is a sweet wine type made from sun-dried grapes, commonly used as a dessert wine.</rdfs:comment>
+        <rdfs:label>Pedro Ximenez type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Priorato -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Priorato">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <baco-spanish-wine-ontology:regionName>Priorato</baco-spanish-wine-ontology:regionName>
+        <rdfs:comment>The Priorat region is a Spanish wine region known for producing powerful, full-bodied red wines made primarily from Garnacha and Cariñena grapes.</rdfs:comment>
+        <rdfs:label>Priorato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Recaredo -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Recaredo">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+        <baco-spanish-wine-ontology:producesIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Cataluna"/>
+        <baco-spanish-wine-ontology:producesIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Cava"/>
+        <baco-spanish-wine-ontology:wineryName>Recaredo</baco-spanish-wine-ontology:wineryName>
+        <rdfs:comment>Recaredo is a Spanish winery that produces high-quality cava wines using organic and biodynamic agriculture practices.</rdfs:comment>
+        <rdfs:label>Recaredo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#RedType -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#RedType">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineType"/>
+        <baco-spanish-wine-ontology:typeName>Red</baco-spanish-wine-ontology:typeName>
+        <rdfs:comment>Type of wine made from dark-colored grapes that undergo a fermentation process with the grape skins. This process gives red wine its characteristic color, aroma, and flavor. Red wines can vary in style and taste depending on the grape variety, production method, and aging process, and are often enjoyed with hearty meals or as a relaxing evening drink.</rdfs:comment>
+        <rdfs:label>Red type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Ribeiro -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Ribeiro">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <baco-spanish-wine-ontology:regionName>Ribeiro</baco-spanish-wine-ontology:regionName>
+        <rdfs:comment>Ribeiro is a wine region in the northwest of Spain, known for producing high-quality white wines made primarily from the Treixadura grape.</rdfs:comment>
+        <rdfs:label>Ribeiro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#RiberadelDuero -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#RiberadelDuero">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <baco-spanish-wine-ontology:regionName>Ribera del Duero</baco-spanish-wine-ontology:regionName>
+        <rdfs:comment>Ribera del Duero is a renowned wine region in northern Spain, known for producing high-quality red wines made from the Tempranillo grape. Wines from this region are characterized by their deep color, complex aromas, and rich flavors, often with notes of dark fruit and spice.</rdfs:comment>
+        <rdfs:label>Ribera del Duero</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#RiberadelDueroRed -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#RiberadelDueroRed">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety"/>
+        <baco-spanish-wine-ontology:grapeVarietyName>Ribera del Duero Red</baco-spanish-wine-ontology:grapeVarietyName>
+        <rdfs:comment>Ribera del Duero red wines are a type of high-quality Spanish wine that are produced in the Ribera del Duero region using primarily Tempranillo grapes. These wines are known for their rich, full-bodied flavors with notes of dark fruit, spices, and oak. Ribera del Duero red wines are aged for a minimum of one year in oak barrels, which gives them their unique complexity and depth. They are considered some of the best red wines in Spain and are highly sought after by wine enthusiasts around the world.</rdfs:comment>
+        <rdfs:label>Ribera del Duero red</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Rioja -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Rioja">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <baco-spanish-wine-ontology:regionName>Rioja</baco-spanish-wine-ontology:regionName>
+        <rdfs:comment>The Rioja region is a wine region in Spain known for producing high-quality red and white wines using the Tempranillo grape.</rdfs:comment>
+        <rdfs:label>Rioja</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Rueda -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Rueda">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <baco-spanish-wine-ontology:regionName>Rueda</baco-spanish-wine-ontology:regionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Sherry -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Sherry">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety"/>
+        <baco-spanish-wine-ontology:grapeVarietyName>Sherry</baco-spanish-wine-ontology:grapeVarietyName>
+        <rdfs:comment>Type of grape used in the production of sherry wine, mainly grown in the Jerez region of Spain. The most common grape varieties used for sherry production are Palomino, Pedro Ximenez, and Moscatel. These grape varieties have distinctive characteristics that contribute to the unique taste and aroma of sherry wines.</rdfs:comment>
+        <rdfs:label>Sherry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#SherryType -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#SherryType">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineType"/>
+        <baco-spanish-wine-ontology:typeName>Sherry</baco-spanish-wine-ontology:typeName>
+        <rdfs:comment>The Sherry is a fortified wine from the Sherry Triangle, in Andalusia, Spain. It is made from white grapes, usually Palomino, and aged in a unique system called Solera.</rdfs:comment>
+        <rdfs:label>Sherry type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#SibaritaOlorosoJerezXeresSherry30YearsV.O.R.S -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#SibaritaOlorosoJerezXeresSherry30YearsV.O.R.S">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <baco-spanish-wine-ontology:hasVariety rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Sherry"/>
+        <baco-spanish-wine-ontology:hasWineType rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Dry"/>
+        <baco-spanish-wine-ontology:pairsWith rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Atlantic"/>
+        <baco-spanish-wine-ontology:producedBy rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Osborne"/>
+        <baco-spanish-wine-ontology:producedIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#JerezOloroso"/>
+        <baco-spanish-wine-ontology:wineAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</baco-spanish-wine-ontology:wineAcidity>
+        <baco-spanish-wine-ontology:wineBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</baco-spanish-wine-ontology:wineBody>
+        <baco-spanish-wine-ontology:wineName>Sibarita Oloroso JerezXeresSherry 30 Years V.O.R.S</baco-spanish-wine-ontology:wineName>
+        <baco-spanish-wine-ontology:winePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">79.9</baco-spanish-wine-ontology:winePrice>
+        <baco-spanish-wine-ontology:wineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</baco-spanish-wine-ontology:wineRating>
+        <baco-spanish-wine-ontology:wineReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">117</baco-spanish-wine-ontology:wineReviews>
+        <rdfs:comment>This wine is a premium sherry wine produced in the Jerez region of Spain. Aged for three decades using the solera system, it has a rich, complex flavor with notes of hazelnut, caramel, and dried fruit. This sherry pairs well with desserts or can be enjoyed on its own as a digestif.</rdfs:comment>
+        <rdfs:label>Sibarita Oloroso Jerez Xeres Sherry 30 Years V.O.R.S</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#SoleraIndiaOlorosoRareSherry -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#SoleraIndiaOlorosoRareSherry">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <baco-spanish-wine-ontology:hasVariety rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Sherry"/>
+        <baco-spanish-wine-ontology:hasWineType rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Dry"/>
+        <baco-spanish-wine-ontology:pairsWith rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Chinook"/>
+        <baco-spanish-wine-ontology:producedBy rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Osborne"/>
+        <baco-spanish-wine-ontology:producedIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#JerezXeresSherry"/>
+        <baco-spanish-wine-ontology:wineAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</baco-spanish-wine-ontology:wineAcidity>
+        <baco-spanish-wine-ontology:wineBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</baco-spanish-wine-ontology:wineBody>
+        <baco-spanish-wine-ontology:wineName>Solera India Oloroso Rare Sherry</baco-spanish-wine-ontology:wineName>
+        <baco-spanish-wine-ontology:winePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">189.99</baco-spanish-wine-ontology:winePrice>
+        <baco-spanish-wine-ontology:wineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</baco-spanish-wine-ontology:wineRating>
+        <baco-spanish-wine-ontology:wineReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">74</baco-spanish-wine-ontology:wineReviews>
+        <rdfs:comment>Solera India Oloroso Rare Sherry is a unique and rare wine from the Jerez region in Spain. It is produced using the Solera aging system, which blends younger and older wines to achieve a consistent and complex flavor profile. This particular sherry is known for its rich and nutty taste, with hints of dried fruits and spices. It is a prized and sought-after wine for those who appreciate the craftsmanship and tradition of Jerez winemaking.</rdfs:comment>
+        <rdfs:label>Solera India Oloroso Rare Sherry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Tempranillo -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Tempranillo">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety"/>
+        <baco-spanish-wine-ontology:grapeVarietyName>Tempranillo</baco-spanish-wine-ontology:grapeVarietyName>
+        <rdfs:comment>Tempranillo is a red grape variety used to make full-bodied wines with high tannins and acidity. It is mainly grown in Spain and used in the production of Rioja and Ribera del Duero wines.</rdfs:comment>
+        <rdfs:label>Tempranillo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#TempranilloType -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#TempranilloType">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineType"/>
+        <baco-spanish-wine-ontology:typeName>Tempranillo</baco-spanish-wine-ontology:typeName>
+        <rdfs:comment>Tempranillo is a red grape variety widely grown in Spain and often used to produce full-bodied, fruity, and elegant red wines.</rdfs:comment>
+        <rdfs:label>Tempranillo type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#TesoLaMonja -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#TesoLaMonja">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+        <baco-spanish-wine-ontology:producesIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Toro"/>
+        <baco-spanish-wine-ontology:wineryName>Teso La Monja</baco-spanish-wine-ontology:wineryName>
+        <rdfs:comment>Teso La Monja is a winery located in the Toro region of Spain, producing high-quality wines made from the Tinta de Toro grape variety.</rdfs:comment>
+        <rdfs:label>Teso la Monja</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Toro -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Toro">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <baco-spanish-wine-ontology:regionName>Toro</baco-spanish-wine-ontology:regionName>
+        <rdfs:comment>The Toro region is a Spanish wine region located in the province of Zamora. It is known for producing bold and full-bodied red wines made primarily from the Tinta de Toro grape variety.</rdfs:comment>
+        <rdfs:label>Toro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#ToroAlbala -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#ToroAlbala">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+        <baco-spanish-wine-ontology:producesIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#MontillaMoriles"/>
+        <baco-spanish-wine-ontology:wineryName>Toro Albalá</baco-spanish-wine-ontology:wineryName>
+        <rdfs:comment>Toro Albalá is a winery located in the Montilla-Moriles wine region, known for its sweet Pedro Ximénez wines aged in old barrels for decades.</rdfs:comment>
+        <rdfs:label>Toro Albala</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#ToroRedType -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#ToroRedType">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineType"/>
+        <baco-spanish-wine-ontology:typeName>Toro Red</baco-spanish-wine-ontology:typeName>
+        <rdfs:comment>A bold and full-bodied red wine type made from the Tinta de Toro grape variety grown in the Toro region of Spain, known for its intense flavors of dark fruit and spice.</rdfs:comment>
+        <rdfs:label>Toro red type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Turodenmota -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Turodenmota">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <baco-spanish-wine-ontology:hasVariety rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Cava"/>
+        <baco-spanish-wine-ontology:hasWineType rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#CavaType"/>
+        <baco-spanish-wine-ontology:pairsWith rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Atlantic"/>
+        <baco-spanish-wine-ontology:producedBy rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Recaredo"/>
+        <baco-spanish-wine-ontology:producedIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Cava"/>
+        <baco-spanish-wine-ontology:wineAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</baco-spanish-wine-ontology:wineAcidity>
+        <baco-spanish-wine-ontology:wineBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</baco-spanish-wine-ontology:wineBody>
+        <baco-spanish-wine-ontology:wineName>Turo d&apos;en Mota</baco-spanish-wine-ontology:wineName>
+        <baco-spanish-wine-ontology:winePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99</baco-spanish-wine-ontology:winePrice>
+        <baco-spanish-wine-ontology:wineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</baco-spanish-wine-ontology:wineRating>
+        <baco-spanish-wine-ontology:wineReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</baco-spanish-wine-ontology:wineReviews>
+        <baco-spanish-wine-ontology:wineVintage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2007</baco-spanish-wine-ontology:wineVintage>
+        <rdfs:comment>Turo d&apos;en Mota is a high-end wine produced by Recaredo winery in Catalonia, Spain. It is made from Xarello grapes and aged for a minimum of ten years.</rdfs:comment>
+        <rdfs:label>Turo d en Mota</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Unico -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Unico">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+        <baco-spanish-wine-ontology:hasVariety rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#RiberadelDueroRed"/>
+        <baco-spanish-wine-ontology:hasWineType rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#RedType"/>
+        <baco-spanish-wine-ontology:pairsWith rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Entrecot"/>
+        <baco-spanish-wine-ontology:producedBy rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#VegaSicilia"/>
+        <baco-spanish-wine-ontology:producedIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#RiberadelDuero"/>
+        <baco-spanish-wine-ontology:wineAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</baco-spanish-wine-ontology:wineAcidity>
+        <baco-spanish-wine-ontology:wineBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</baco-spanish-wine-ontology:wineBody>
+        <baco-spanish-wine-ontology:wineName>Unico</baco-spanish-wine-ontology:wineName>
+        <baco-spanish-wine-ontology:winePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">872.47</baco-spanish-wine-ontology:winePrice>
+        <baco-spanish-wine-ontology:wineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</baco-spanish-wine-ontology:wineRating>
+        <baco-spanish-wine-ontology:wineReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">940</baco-spanish-wine-ontology:wineReviews>
+        <baco-spanish-wine-ontology:wineVintage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1994</baco-spanish-wine-ontology:wineVintage>
+        <rdfs:comment>Unico is a prestigious red wine from Spain&apos;s Ribera del Duero region. Produced by Vega Sicilia, it is a blend of Tempranillo and Cabernet Sauvignon grapes aged for several years in oak barrels. The wine is known for its complex aromas and flavors, as well as its ability to age gracefully. It is highly sought after by collectors and wine enthusiasts.</rdfs:comment>
+        <rdfs:label>Unico</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#Valdespino -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#Valdespino">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+        <baco-spanish-wine-ontology:producesIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#JerezAmontillado"/>
+        <baco-spanish-wine-ontology:producesIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#JerezPaloCortado"/>
+        <baco-spanish-wine-ontology:producesIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#JerezXeresSherry"/>
+        <baco-spanish-wine-ontology:wineryName>Valdespino</baco-spanish-wine-ontology:wineryName>
+        <rdfs:comment>Valdespino is a historic winery in Jerez, Spain. It is known for producing high-quality Sherry wines using traditional methods.</rdfs:comment>
+        <rdfs:label>Valdespino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#VegaSicilia -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#VegaSicilia">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Winery"/>
+        <baco-spanish-wine-ontology:producesIn rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#RiberadelDuero"/>
+        <baco-spanish-wine-ontology:wineryName>Vega Sicilia</baco-spanish-wine-ontology:wineryName>
+        <rdfs:comment>Vega Sicilia is a renowned winery located in the Ribera del Duero region of Spain. Known for producing high-quality wines, the winery is considered a pioneer in the Spanish wine industry. With a long and rich history dating back to the 19th century, Vega Sicilia continues to be a prominent player in the world of fine wines.</rdfs:comment>
+        <rdfs:label>Vega Sicilia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#VerdejoType -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#VerdejoType">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#WineType"/>
+        <baco-spanish-wine-ontology:typeName>Verdejo</baco-spanish-wine-ontology:typeName>
+        <rdfs:comment>Verdejo is a white wine grape variety grown in Spain, which produces aromatic and acidic wines, often with notes of citrus and tropical fruit.</rdfs:comment>
+        <rdfs:label>Verdejo type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/BACO_wine_ontology_2023#VinodeEspana -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#VinodeEspana">
+        <rdf:type rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Region"/>
+        <baco-spanish-wine-ontology:regionName>Vino de España</baco-spanish-wine-ontology:regionName>
+        <rdfs:comment>Vinos de España is a generic term that refers to Spanish wines in general. Spain is divided into different wine regions, such as Rioja, Ribera del Duero, and Priorat, among others.</rdfs:comment>
+        <rdfs:label>Vino de Espana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org//baco-wine-ontology/w">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org//baco-wine-ontology/food">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org//baco-wine-ontology/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org//baco-wine-ontology/body">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org//baco-wine-ontology/price">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org//baco-wine-ontology/rating">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org//baco-wine-ontology/acidity">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org//baco-wine-ontology/reviews">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org//baco-wine-ontology/wine">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org//baco-wine-ontology/region">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Classifies Wine according to its price into Economic wines</rdfs:comment>
+        <rdfs:label>EconomicWineRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#winePrice"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/price"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/price"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#EconomicWine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Classifies Wine instances according to rating</rdfs:comment>
+        <rdfs:label>VeryHighRatedWineRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#wineRating"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/rating"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/rating"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#VeryHighRatedWine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Classifies Wine instances according to rating</rdfs:comment>
+        <rdfs:label>HighRatedWineRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#wineRating"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/rating"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/rating"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/rating"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#HighRatedWine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Classifies wines according to high acidity</rdfs:comment>
+        <rdfs:label>HighAcidityWineRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#wineAcidity"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/w"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/acidity"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/acidity"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#HighAcidityWine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Classifies wines according to high acidity</rdfs:comment>
+        <rdfs:label>LowAcidityWineRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#wineAcidity"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/w"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/acidity"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/acidity"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#LowAcidityWine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Classifies Wine according to number of reviews</rdfs:comment>
+        <rdfs:label>TenThousandReviewsWineRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#wineReviews"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/w"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/reviews"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/reviews"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>ExpensiveWineRegion</rdfs:comment>
+        <rdfs:label>Classifies Regions into ExpensiveWineRegion</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#winePrice"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/wine"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/price"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#producedIn"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/wine"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/region"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/price"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#ExpensiveWineRegion"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/region"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Wine instances that pairs with Red Meat instances</rdfs:comment>
+        <rdfs:label>PairsWithRedMeat</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#pairsWith"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/w"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/food"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#RedMeat"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/food"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#PairedWithRedMeatWine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Wine instances pairs with Salmon class</rdfs:comment>
+        <rdfs:label>PairsWithSalmon</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#pairsWith"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/w"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/food"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Salmon"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/food"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#PairedWithSalmonWine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Classifies Wine instances into CompleteBodyWine instances</rdfs:comment>
+        <rdfs:label>CompleteBodyWineRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/body"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#wineBody"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/body"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#CompleteBodyWine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Classifies Wine instances into MediumBodyWine</rdfs:comment>
+        <rdfs:label>MediumBodyWineRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/body"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/body"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#wineBody"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/body"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#MediumBodyWine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Classifies Wine instances into LightBodyWine</rdfs:comment>
+        <rdfs:label>LightBodyWine</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/body"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#wineBody"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/body"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#LightBodyWine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Classifies Wine according to its price into Expensive wines</rdfs:comment>
+        <rdfs:label>ExpensiveWineRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#winePrice"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/price"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/price"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#ExpensiveWine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Classifies Wine according to its price into Pricy</rdfs:comment>
+        <rdfs:label>PricyWineRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#winePrice"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/price"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/price"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/price"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#PricyWine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
