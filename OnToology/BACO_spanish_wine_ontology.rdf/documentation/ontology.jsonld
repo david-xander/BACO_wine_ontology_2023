@@ -1,0 +1,3273 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid5"
+    }, {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "http://www.w3.org/2001/XMLSchema#minExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid100",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org//baco-wine-ontology/body"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "2"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid104",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "_:genid106",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#MediumBodyWine"
+  } ]
+}, {
+  "@id" : "_:genid107",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Classifies Wine instances into LightBodyWine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LightBodyWine"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid115"
+    }, {
+      "@id" : "_:genid111"
+    }, {
+      "@id" : "_:genid109"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid117"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid109",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/body"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineBody"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid15"
+    }, {
+      "@id" : "_:genid13"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid111",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org//baco-wine-ontology/body"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "2"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid115",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "_:genid117",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#LightBodyWine"
+  } ]
+}, {
+  "@id" : "_:genid118",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Classifies Wine instances into CompleteBodyWine instances"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CompleteBodyWineRule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid126"
+    }, {
+      "@id" : "_:genid122"
+    }, {
+      "@id" : "_:genid120"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid128"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid120",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/body"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineBody"
+  } ]
+}, {
+  "@id" : "_:genid122",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org//baco-wine-ontology/body"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "3"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid126",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "_:genid128",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#CompleteBodyWine"
+  } ]
+}, {
+  "@id" : "_:genid129",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Wine instances that pairs with Red Meat instances"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PairsWithRedMeat"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid135"
+    }, {
+      "@id" : "_:genid133"
+    }, {
+      "@id" : "_:genid131"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid137"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "5"
+  } ]
+}, {
+  "@id" : "_:genid131",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/food"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#RedMeat"
+  } ]
+}, {
+  "@id" : "_:genid133",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/food"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#pairsWith"
+  } ]
+}, {
+  "@id" : "_:genid135",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "_:genid137",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#PairedWithRedMeatWine"
+  } ]
+}, {
+  "@id" : "_:genid138",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Wine instances pairs with Salmon class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PairsWithSalmon"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid144"
+    }, {
+      "@id" : "_:genid142"
+    }, {
+      "@id" : "_:genid140"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid146"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid140",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/food"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Salmon"
+  } ]
+}, {
+  "@id" : "_:genid142",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/food"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#pairsWith"
+  } ]
+}, {
+  "@id" : "_:genid144",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "_:genid146",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#PairedWithSalmonWine"
+  } ]
+}, {
+  "@id" : "_:genid147",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Classifies wines according to high acidity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HighAcidityWineRule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid155"
+    }, {
+      "@id" : "_:genid153"
+    }, {
+      "@id" : "_:genid149"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid157"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid149",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org//baco-wine-ontology/acidity"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "3"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "http://www.w3.org/2001/XMLSchema#minExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid153",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/acidity"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineAcidity"
+  } ]
+}, {
+  "@id" : "_:genid155",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "_:genid157",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#HighAcidityWine"
+  } ]
+}, {
+  "@id" : "_:genid158",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Classifies wines according to high acidity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LowAcidityWineRule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid166"
+    }, {
+      "@id" : "_:genid164"
+    }, {
+      "@id" : "_:genid160"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid168"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#foodName"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid160",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org//baco-wine-ontology/acidity"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "3"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid164",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/acidity"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineAcidity"
+  } ]
+}, {
+  "@id" : "_:genid166",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "_:genid168",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#LowAcidityWine"
+  } ]
+}, {
+  "@id" : "_:genid169",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Classifies Wine according to number of reviews"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TenThousandReviewsWineRule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid177"
+    }, {
+      "@id" : "_:genid175"
+    }, {
+      "@id" : "_:genid171"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#grapeVarietyName"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid171",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org//baco-wine-ontology/reviews"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "10000"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid175",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/reviews"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineReviews"
+  } ]
+}, {
+  "@id" : "_:genid177",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "_:genid178",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ExpensiveWineRegion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Classifies Regions into ExpensiveWineRegion"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid186"
+    }, {
+      "@id" : "_:genid184"
+    }, {
+      "@id" : "_:genid180"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid188"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#regionName"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid180",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org//baco-wine-ontology/price"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "300"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid184",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/wine"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/region"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#producedIn"
+  } ]
+}, {
+  "@id" : "_:genid186",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/wine"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/price"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#winePrice"
+  } ]
+}, {
+  "@id" : "_:genid188",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/region"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#ExpensiveWineRegion"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineName"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#hasVariety"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Food"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#pairsWith"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#hasWineType"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#producedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#producedIn"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#entityName"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#typeName"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineryName"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#producesIn"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Classifies Wine according to its price into Expensive wines"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ExpensiveWineRule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid37"
+    }, {
+      "@id" : "_:genid35"
+    }, {
+      "@id" : "_:genid31"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid39"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org//baco-wine-ontology/price"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "300"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/price"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#winePrice"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#ExpensiveWine"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Classifies Wine according to its price into Pricy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PricyWineRule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid52"
+    }, {
+      "@id" : "_:genid50"
+    }, {
+      "@id" : "_:genid46"
+    }, {
+      "@id" : "_:genid42"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid54"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org//baco-wine-ontology/price"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "300"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org//baco-wine-ontology/price"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "60"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "http://www.w3.org/2001/XMLSchema#minExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/price"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#winePrice"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#PricyWine"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Classifies Wine according to its price into Economic wines"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EconomicWineRule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid63"
+    }, {
+      "@id" : "_:genid61"
+    }, {
+      "@id" : "_:genid57"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid65"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org//baco-wine-ontology/price"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "60"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid10"
+    }, {
+      "@id" : "_:genid8"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/price"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#winePrice"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#EconomicWine"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Classifies Wine instances according to rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "VeryHighRatedWineRule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid74"
+    }, {
+      "@id" : "_:genid72"
+    }, {
+      "@id" : "_:genid68"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid76"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org//baco-wine-ontology/rating"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+      "@value" : "4.7"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/rating"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineRating"
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#VeryHighRatedWine"
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Classifies Wine instances according to rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HighRatedWineRule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid89"
+    }, {
+      "@id" : "_:genid87"
+    }, {
+      "@id" : "_:genid83"
+    }, {
+      "@id" : "_:genid79"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid91"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid79",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org//baco-wine-ontology/rating"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "4"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org//baco-wine-ontology/rating"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+      "@value" : "4.7"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid87",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/rating"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineRating"
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#HighRatedWine"
+  } ]
+}, {
+  "@id" : "_:genid92",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Classifies Wine instances into MediumBodyWine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MediumBodyWineRule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid104"
+    }, {
+      "@id" : "_:genid100"
+    }, {
+      "@id" : "_:genid96"
+    }, {
+      "@id" : "_:genid94"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid106"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid94",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org//baco-wine-ontology/body"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineBody"
+  } ]
+}, {
+  "@id" : "_:genid96",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org//baco-wine-ontology/body"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "4"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org//baco-wine-ontology/acidity",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org//baco-wine-ontology/body",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org//baco-wine-ontology/food",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org//baco-wine-ontology/p",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org//baco-wine-ontology/price",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org//baco-wine-ontology/rating",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org//baco-wine-ontology/region",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org//baco-wine-ontology/reviews",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org//baco-wine-ontology/w",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org//baco-wine-ontology/wine",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "David Delgado Camacho"
+  }, {
+    "@value" : "Pablo Pimàs Verge"
+  } ],
+  "http://purl.org/dc/elements/1.1/license" : [ {
+    "@value" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "BACO Spanish Wine Ontology, by David Delgado Camacho and Pablo Pimàs Verge based on the  Kagle: Spanish Wine Quality Dataset from Fedesoriano."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BACO Wine ontology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Acidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the perceived acidity in a wine, which is typically expressed on a scale from low to high or as a specific pH value. It also specifies that acidity is measured by the amount of total titratable acidity, usually expressed in grams per litre of wine."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Acidity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#AlvaroPalacios",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "AlvaroPalacios is a winery located in the Priorat region of Spain, known for producing high-quality wines using traditional methods."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Alvaro Palacios"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producesIn" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Priorato"
+  }, {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Rioja"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineryName" : [ {
+    "@value" : "Alvaro Palacios"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Artadi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Artadi is a renowned Spanish winery located in the Rioja Alavesa region, producing high-quality wines with a focus on the Tempranillo grape."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Artadi"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineryName" : [ {
+    "@value" : "Artadi"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Atlantic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Salmon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Atlantic salmon is a species of fish native to the North Atlantic Ocean, commonly used as a food source. Known for its rich flavor and high omega-3 fatty acid content, it pairs well with various wines in culinary dishes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Atlantic"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#foodName" : [ {
+    "@value" : "Atlantic Salmon"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Bierzo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Bierzo is a Spanish wine region known for producing high-quality red wines made from the Mencía grape."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bierzo"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#regionName" : [ {
+    "@value" : "Bierzo"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#BodegasElNido",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Bodegas El Nido is a Spanish winery located in the Jumilla region, known for producing high-quality, full-bodied red wines from the Monastrell grape variety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bodegas el Niño"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producesIn" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Jumilla"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineryName" : [ {
+    "@value" : "Bodegas El Nido"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Body",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The wine body refers to the perceived weight or fullness of a wine in the mouth, which is influenced by factors such as grape variety, alcohol content, and ageing conditions. It also specifies that wine bodies can range from light-bodied to full-bodied wines."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Body"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Cataluna",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#regionName" : [ {
+    "@value" : "Cataluña"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Cava",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Denomination of Origin for sparkling wines produced in the traditional method in Catalonia, Spain."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cava"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#regionName" : [ {
+    "@value" : "Cava"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#CavaType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cava type refers to the classification of sparkling wine produced in the Cava region of Spain using traditional methods"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cava type"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#typeName" : [ {
+    "@value" : "Cava"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Chinook",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Salmon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Salmon Chinook is a species of Pacific salmon known for its large size and distinctive flavor. It is highly prized for its firm, rich flesh and is commonly used in gourmet cuisine. This species typically grows to be quite large, reaching up to 100 pounds, and is found primarily in the North Pacific Ocean and its tributaries."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Chinook"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#foodName" : [ {
+    "@value" : "Chinook Salmon"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#CompleteBodyWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A full-bodied wine has a rich and robust taste, with a higher alcohol content and more intense flavors. These wines have a heavier texture and mouthfeel, making them perfect for pairing with bold and hearty dishes such as steak or roasted vegetables."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Complete body wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Body"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#LightBodyWine"
+  }, {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#MediumBodyWine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#DominiodePingus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Dominio de Pingus refers to a Spanish winery known for producing high-quality wines in the Ribera del Duero region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Dominio de Pingus"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producesIn" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#RiberadelDuero"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineryName" : [ {
+    "@value" : "Dominios de Pingus"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#DonPXConventoSeleccion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Don PX Convento Selección is a sweet dessert wine produced in MontillaMoriles, Spain, made from Pedro Ximénez grapes that are sun-dried and aged in American oak barrels for decades, resulting in a rich and complex wine with notes of raisins, figs, coffee, and caramel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Don PX Convento Seleccion"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#hasVariety" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#PedroXimenez"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#hasWineType" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#PedroXimenezType"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#pairsWith" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Atlantic"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producedBy" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#ToroAlbala"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producedIn" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#MontillaMoriles"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineAcidity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineBody" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineName" : [ {
+    "@value" : "Don PX Convento Selección"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#winePrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "350.00"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.8"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineReviews" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "398"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineVintage" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1946"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Dry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Dry wine is a type of wine that contains very little residual sugar, resulting in a less sweet taste. Typically, the sugar content in dry wine is less than 1 gram per liter. This type of wine is often preferred by those who enjoy a more acidic and less sweet taste profile."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Dry"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#typeName" : [ {
+    "@value" : "Dry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#EconomicWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Wines with price less than 60"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Economic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Price"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#ExpensiveWine"
+  }, {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#PricyWine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#ElCarretil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "El carretil is a red wine produced by Artadi winery with Tempranillo grapes, known for its rich and complex flavors."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "El Carretil"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#hasVariety" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Tempranillo"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#hasWineType" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#TempranilloType"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#pairsWith" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Chinook"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producedBy" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Artadi"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producedIn" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#VinodeEspana"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineAcidity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineBody" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineName" : [ {
+    "@value" : "El Carretil"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#winePrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "143.51"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.5"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineReviews" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "66"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineVintage" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2014"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Entrecot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#RedMeat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A prime cut of beef taken from the rib section, typically grilled or pan-fried and often served with sauces or seasonings."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Entrecot"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#foodName" : [ {
+    "@value" : "Entrecot"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#ExpensiveWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Wines with price starting from 300"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Expensive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Price"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#PricyWine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#ExpensiveWineRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An exclusive wine region producing high-quality wines with prices typically above average, often due to its unique geographical or climatic characteristics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Expensive wine region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Fish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Fish is a class of aquatic creatures that are commonly used as food. They typically have a mild flavor and tender texture, making them a popular choice for cooking. There are many different species of fish that can be used in a variety of dishes, such as sushi, fish and chips, and grilled fish."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fish"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Fish_as_food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#SeaFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Food",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Food items that can be paired with wines to enhance the tasting experience. It also explains that the process of food pairing with wine involves selecting a dish that complements or contrasts the wine's flavour, aroma, and body"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/ontology/Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A grape variety represents a specific type of grape used in the production of wine. Grape varieties have distinct characteristics, such as flavour, colour, and aroma, that influence the taste and style of the wine. Different grape varieties are better suited to specific climates and soil types, which can affect their growth and quality."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Grape Variety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Category:Grape_varieties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid17"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#HighAcidityWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Wines with acidity higher than 3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "High acidity wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Acidity"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#LowAcidityWine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#HighRatedWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "High rated wine refers to a wine that has received a high score or rating from wine critics or experts based on various factors such as taste, aroma, body, and complexity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "High rated wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Rating"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#VeryHighRatedWine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#JerezAmontillado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#regionName" : [ {
+    "@value" : "Jerez Amontillado"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#JerezOloroso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The region is known for its unique climate, with hot summers and cool winters, which creates ideal growing conditions for the Palomino and Pedro Ximenez grape varieties. The wine is aged in oak barrels, resulting in a complex flavor profile with notes of nuts, caramel, and dried fruit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Jerez Oloroso"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#regionName" : [ {
+    "@value" : "Jerez Oloroso"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#JerezPaloCortado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#regionName" : [ {
+    "@value" : "Jerez Palo Cortado"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#JerezXeresSherry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Jerez is a wine region located in the southwestern part of Spain, known for producing the world-famous Sherry wine. The region has a warm Mediterranean climate and chalky soils that contribute to the unique character of the wines. Jerez is also home to a number of bodegas, some of which have been producing Sherry for centuries."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Jerez Xerez Sherry"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#regionName" : [ {
+    "@value" : "JerezXeresSherry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Jumilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Jumilla is a wine region located in southeastern Spain, known for producing full-bodied red wines made from the Monastrell grape."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Jumilla"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#regionName" : [ {
+    "@value" : "Jumilla"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#LightBodyWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A light body wine is characterized by its lower alcohol content, mild taste, and refreshing finish. Typically paired with lighter dishes, such as salads, seafood, and poultry, it provides a perfect complement to meals without overwhelming the palate.\""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Light body wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Body"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#MediumBodyWine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#LowAcidityWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Wines with acidity lower or equal to 3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Low acidity wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Acidity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#MediumBodyWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Medium body wine is a type of wine that falls in between light and full-bodied wines. It typically has a moderate alcohol content and a balance of flavor and texture, making it a versatile wine that can pair well with a range of foods."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "medium body wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Body"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#MontillaMoriles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "MontillaMoriles is a wine region in southern Spain, located in the province of Córdoba. The region is known for its production of fortified wines, including the famous Pedro Ximénez grapes, which are used to produce sweet wines with a rich, nutty flavor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Montilla Moriles"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#regionName" : [ {
+    "@value" : "MontillaMoriles"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#NumberOfReviews",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The total number of reviews given to a wine by critics or industry specialists."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Number of reviews"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Ordonez",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ordoñez is a Spanish winery located in the Malaga region. It produces high-quality wines using traditional methods with a modern twist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ordonez"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producesIn" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Rueda"
+  }, {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Toro"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineryName" : [ {
+    "@value" : "Ordoñez"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Osborne",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Osborne is a brand of Spanish wines that has been producing high-quality wines for over two centuries. The winery is known for its deep-rooted traditions and unique production processes that result in exceptional wines. Osborne wines range from full-bodied reds to crisp whites and are made from a variety of grape varieties grown in the best wine regions of Spain."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Osborne"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producesIn" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#JerezOloroso"
+  }, {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#JerezXeresSherry"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineryName" : [ {
+    "@value" : "Osborne"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#OverTenThousendReviewsWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Wines with more than 10000 reviews"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Over ten thousand reviews wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#NumberOfReviews"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#UnderFortyReviewsWine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#PagodeCarraovejas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Pago de Carraovejas is a winery located in the Ribera del Duero region of Spain. It produces high-quality red wines using Tempranillo, Cabernet Sauvignon, and Merlot grapes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pago de Carraovejas"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producesIn" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#RiberadelDuero"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineryName" : [ {
+    "@value" : "Pago de Carraovejas"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#PairedWithRedMeatWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Wine that can be paired with red meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wine paired with red meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Pairing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#PairedWithSalmonWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Salmon pairs well with a variety of wines, but typically lighter-bodied white wines or medium-bodied red wines such as Pinot Noir. The flavors of the wine should complement the flavors of the salmon, creating a balanced and enjoyable pairing experience."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wine paired with salmon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Pairing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Pairing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Pairing is the art of combining food and wine to enhance the flavors and create a harmonious dining experience. The right pairing can elevate a dish to a whole new level and make the wine taste even better. It's all about finding the perfect balance between the food and the wine to create a truly memorable meal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pairing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#PedroXimenez",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Pedro Ximénez is a white grape variety primarily grown in Spain for sherry production, with raisin-like flavors due to the raisining of grapes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pedro Ximenez"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#grapeVarietyName" : [ {
+    "@value" : "Pedro Ximenez"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#PedroXimenezType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Pedro Ximenez is a sweet wine type made from sun-dried grapes, commonly used as a dessert wine."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pedro Ximenez type"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#typeName" : [ {
+    "@value" : "Pedro Ximenez"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Price",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The wine price represents the cost of a bottle of wine in a particular currency. Wine prices can vary widely depending on factors such as grape variety, winemaking techniques, ageing, and the reputation of the producer or region. Wine prices can also be influenced by external factors such as supply and demand, economic conditions, and exchange rates."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Price"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#PricyWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Wines with price equals to 60 but less than 300"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pricy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Price"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Priorato",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Priorat region is a Spanish wine region known for producing powerful, full-bodied red wines made primarily from Garnacha and Cariñena grapes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Priorato"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#regionName" : [ {
+    "@value" : "Priorato"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property is used to indicate the quality or rating of a particular wine, usually on a scale from 0 to 5. This rating can be given by various wine critics or publications and is used as a guide to help consumers make informed choices when purchasing wine."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Recaredo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Recaredo is a Spanish winery that produces high-quality cava wines using organic and biodynamic agriculture practices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Recaredo"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producesIn" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Cataluna"
+  }, {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Cava"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineryName" : [ {
+    "@value" : "Recaredo"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#RedMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Red meat is a food category that includes various types of meat, such as beef, lamb, and pork, which are typically red or dark in color when raw. These meats are often considered rich in protein and iron, and are commonly paired with full-bodied red wines to complement their flavors."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Red meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Red_meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Food"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#SeaFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#RedType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Type of wine made from dark-colored grapes that undergo a fermentation process with the grape skins. This process gives red wine its characteristic color, aroma, and flavor. Red wines can vary in style and taste depending on the grape variety, production method, and aging process, and are often enjoyed with hearty meals or as a relaxing evening drink."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Red type"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#typeName" : [ {
+    "@value" : "Red"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A WineRegion represents a specific geographical area known for wine production, characterised by its unique climate, soil, and topography. Each region may have distinct regulations and wine styles, and it can contain multiple subregions and wineries."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/ontology/WineRegion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid18"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Ribeiro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ribeiro is a wine region in the northwest of Spain, known for producing high-quality white wines made primarily from the Treixadura grape."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ribeiro"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#regionName" : [ {
+    "@value" : "Ribeiro"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#RiberadelDuero",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ribera del Duero is a renowned wine region in northern Spain, known for producing high-quality red wines made from the Tempranillo grape. Wines from this region are characterized by their deep color, complex aromas, and rich flavors, often with notes of dark fruit and spice."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ribera del Duero"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#regionName" : [ {
+    "@value" : "Ribera del Duero"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#RiberadelDueroRed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ribera del Duero red wines are a type of high-quality Spanish wine that are produced in the Ribera del Duero region using primarily Tempranillo grapes. These wines are known for their rich, full-bodied flavors with notes of dark fruit, spices, and oak. Ribera del Duero red wines are aged for a minimum of one year in oak barrels, which gives them their unique complexity and depth. They are considered some of the best red wines in Spain and are highly sought after by wine enthusiasts around the world."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ribera del Duero red"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#grapeVarietyName" : [ {
+    "@value" : "Ribera del Duero Red"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Rioja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Rioja region is a wine region in Spain known for producing high-quality red and white wines using the Tempranillo grape."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rioja"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#regionName" : [ {
+    "@value" : "Rioja"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Rueda",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#regionName" : [ {
+    "@value" : "Rueda"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Salmon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Salmon is a type of fish that is native to the North Atlantic and Pacific Oceans and is known for its delicate flavor, rich texture, and versatility in cooking. It is commonly grilled, baked, or smoked, and is a popular ingredient in salads, sushi, and other dishes. Salmon is also a good source of omega-3 fatty acids, protein, and other nutrients."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Salmon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Salmon_as_food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Fish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#SeaFood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Seafood refers to a wide range of edible sea creatures, including fish, shellfish, and other marine animals. These dishes are often enjoyed for their unique flavors and health benefits, such as being low in fat and high in protein. From grilled fish to seafood paella, there are many delicious and nutritious ways to enjoy this culinary category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sea food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Seafood"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Food"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Sherry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Type of grape used in the production of sherry wine, mainly grown in the Jerez region of Spain. The most common grape varieties used for sherry production are Palomino, Pedro Ximenez, and Moscatel. These grape varieties have distinctive characteristics that contribute to the unique taste and aroma of sherry wines."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sherry"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#grapeVarietyName" : [ {
+    "@value" : "Sherry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#SherryType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Sherry is a fortified wine from the Sherry Triangle, in Andalusia, Spain. It is made from white grapes, usually Palomino, and aged in a unique system called Solera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sherry type"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#typeName" : [ {
+    "@value" : "Sherry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#SibaritaOlorosoJerezXeresSherry30YearsV.O.R.S",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This wine is a premium sherry wine produced in the Jerez region of Spain. Aged for three decades using the solera system, it has a rich, complex flavor with notes of hazelnut, caramel, and dried fruit. This sherry pairs well with desserts or can be enjoyed on its own as a digestif."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sibarita Oloroso Jerez Xeres Sherry 30 Years V.O.R.S"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#hasVariety" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Sherry"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#hasWineType" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Dry"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#pairsWith" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Atlantic"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producedBy" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Osborne"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producedIn" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#JerezOloroso"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineAcidity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineBody" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineName" : [ {
+    "@value" : "Sibarita Oloroso JerezXeresSherry 30 Years V.O.R.S"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#winePrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "79.9"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.4"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineReviews" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "117"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#SoleraIndiaOlorosoRareSherry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Solera India Oloroso Rare Sherry is a unique and rare wine from the Jerez region in Spain. It is produced using the Solera aging system, which blends younger and older wines to achieve a consistent and complex flavor profile. This particular sherry is known for its rich and nutty taste, with hints of dried fruits and spices. It is a prized and sought-after wine for those who appreciate the craftsmanship and tradition of Jerez winemaking."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Solera India Oloroso Rare Sherry"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#hasVariety" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Sherry"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#hasWineType" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Dry"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#pairsWith" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Chinook"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producedBy" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Osborne"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producedIn" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#JerezXeresSherry"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineAcidity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineBody" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineName" : [ {
+    "@value" : "Solera India Oloroso Rare Sherry"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#winePrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "189.99"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.6"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineReviews" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "74"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Tempranillo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tempranillo is a red grape variety used to make full-bodied wines with high tannins and acidity. It is mainly grown in Spain and used in the production of Rioja and Ribera del Duero wines."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tempranillo"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#grapeVarietyName" : [ {
+    "@value" : "Tempranillo"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#TempranilloType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tempranillo is a red grape variety widely grown in Spain and often used to produce full-bodied, fruity, and elegant red wines."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tempranillo type"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#typeName" : [ {
+    "@value" : "Tempranillo"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#TesoLaMonja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Teso La Monja is a winery located in the Toro region of Spain, producing high-quality wines made from the Tinta de Toro grape variety."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Teso la Monja"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producesIn" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Toro"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineryName" : [ {
+    "@value" : "Teso La Monja"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Toro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Toro region is a Spanish wine region located in the province of Zamora. It is known for producing bold and full-bodied red wines made primarily from the Tinta de Toro grape variety."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Toro"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#regionName" : [ {
+    "@value" : "Toro"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#ToroAlbala",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Toro Albalá is a winery located in the Montilla-Moriles wine region, known for its sweet Pedro Ximénez wines aged in old barrels for decades."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Toro Albala"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producesIn" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#MontillaMoriles"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineryName" : [ {
+    "@value" : "Toro Albalá"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#ToroRedType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A bold and full-bodied red wine type made from the Tinta de Toro grape variety grown in the Toro region of Spain, known for its intense flavors of dark fruit and spice."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Toro red type"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#typeName" : [ {
+    "@value" : "Toro Red"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Turodenmota",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Turo d'en Mota is a high-end wine produced by Recaredo winery in Catalonia, Spain. It is made from Xarello grapes and aged for a minimum of ten years."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Turo d en Mota"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#hasVariety" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Cava"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#hasWineType" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#CavaType"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#pairsWith" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Atlantic"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producedBy" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Recaredo"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producedIn" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Cava"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineAcidity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineBody" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineName" : [ {
+    "@value" : "Turo d'en Mota"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#winePrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "99"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.7"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineReviews" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "64"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineVintage" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2007"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#UnderFortyReviewsWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Wines with less than 40 reviews"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Under forty reviews wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#NumberOfReviews"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Unico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unico is a prestigious red wine from Spain's Ribera del Duero region. Produced by Vega Sicilia, it is a blend of Tempranillo and Cabernet Sauvignon grapes aged for several years in oak barrels. The wine is known for its complex aromas and flavors, as well as its ability to age gracefully. It is highly sought after by collectors and wine enthusiasts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Unico"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#hasVariety" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#RiberadelDueroRed"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#hasWineType" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#RedType"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#pairsWith" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Entrecot"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producedBy" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#VegaSicilia"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producedIn" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#RiberadelDuero"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineAcidity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineBody" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineName" : [ {
+    "@value" : "Unico"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#winePrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "872.47"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "5"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineReviews" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "940"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineVintage" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1994"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Valdespino",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Valdespino is a historic winery in Jerez, Spain. It is known for producing high-quality Sherry wines using traditional methods."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Valdespino"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producesIn" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#JerezAmontillado"
+  }, {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#JerezPaloCortado"
+  }, {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#JerezXeresSherry"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineryName" : [ {
+    "@value" : "Valdespino"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#VegaSicilia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vega Sicilia is a renowned winery located in the Ribera del Duero region of Spain. Known for producing high-quality wines, the winery is considered a pioneer in the Spanish wine industry. With a long and rich history dating back to the 19th century, Vega Sicilia continues to be a prominent player in the world of fine wines."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Vega Sicilia"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#producesIn" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#RiberadelDuero"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#wineryName" : [ {
+    "@value" : "Vega Sicilia"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#VerdejoType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Verdejo is a white wine grape variety grown in Spain, which produces aromatic and acidic wines, often with notes of citrus and tropical fruit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Verdejo type"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#typeName" : [ {
+    "@value" : "Verdejo"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#VeryHighRatedWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Medium rated wine refers to a wine that has received a score or rating in the middle of the rating scale, usually indicating a good but not exceptional quality. It may be a versatile choice for pairing with different types of food or enjoyed on its own."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Very high rated wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Rating"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#VinodeEspana",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vinos de España is a generic term that refers to Spanish wines in general. Spain is divided into different wine regions, such as Rioja, Ribera del Duero, and Priorat, among others."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Vino de Espana"
+  } ],
+  "https://w3id.org/def/BACO_wine_ontology_2023#regionName" : [ {
+    "@value" : "Vino de España"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Wine is an alcoholic beverage made from fermented grapes. It can vary greatly in flavor, color, and texture depending on factors such as grape variety, region, and winemaking techniques. Wines are commonly classified into categories such as red, white, rosé, and sparkling based on their color and carbonation level."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/ontology/Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineEntity"
+  }, {
+    "@id" : "_:genid20"
+  }, {
+    "@id" : "_:genid21"
+  }, {
+    "@id" : "_:genid22"
+  }, {
+    "@id" : "_:genid23"
+  }, {
+    "@id" : "_:genid24"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/license" : [ {
+    "@value" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The root class representing the most general concept related to the wine domain."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wine entity"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid25"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Wine type represents the style or category of a wine based on its characteristics, such as flavour, colour, and aroma. Wine types can vary widely depending on factors such as the grape varieties used, the region where the wine is produced, and the winemaking techniques employed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wine type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Winery is a physical place where grapes are crushed, fermented and bottled into wine. This class represents a wine-producing facility and may include facilities such as vineyards, tasting rooms and bottling lines. Wineries can produce a wide variety of wines depending on the types of grapes they grow and the production techniques they use."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "http://dbpedia.org/ontology/Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineEntity"
+  }, {
+    "@id" : "_:genid28"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid27"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#allocateWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse relationship of producedIn. A Region allocates different Wines"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Allocate wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#producedIn"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#allocateWinery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse relationship of producesIn. A Region allocates a Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Allocate winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#producesIn"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#entityName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any entity can be expressed by its name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Entity name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#foodName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the name of the food. There can be many of theese names for one entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Food name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#grapeVarietyName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The name of a grape variety that acts as an ingredient of a Wine entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Grape variety name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#hasVariety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This object property refers to the specific grape variety or varieties used in the production of a wine, linking a wine instance to one or more grape varieties that were used in its production."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Has variety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#varietyHasWine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#hasWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse relationship of hasWineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Has wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#hasWineType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#hasWineType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This object property is used in the context of wines to describe the type or style of a wine. It links a wine to its corresponding wine type, such as red, white, or rosé. It is a useful property for categorizing and searching for wines based on their style or type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Has wine type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#isPairedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse relationship of pairsWith"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Is paired with"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#pairsWith"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#makes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse realtionship of producedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Makes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#producedBy"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#pairsWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is an object property that relates a food item to a wine that is known to complement its flavor. It can be used to suggest a suitable wine pairing based on the characteristics of the food, such as its ingredients, texture, and preparation method."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pairs with"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#producedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This object property indicates the winery that produces a particular wine. It relates a wine to a winery, where the winery is the subject and the wine is the object."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Produced by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#producedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This object property represents the relationship between a winery and a geographic location where the wine is produced. This property is used to link a winery with the wine regions where its wines are made."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Produced in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#producesIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This object property is used to describe the relationship between a winery and a region where the winery produces wine. It links the Winery class to the Region class, indicating the region where the wine is produced."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Produces in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#regionName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Name of the Region where Wine is produced"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Region name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#typeName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Name of the type of Wine produced (Red, White, Sparkling, Fortified... )"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Type name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#varietyHasWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse relationship of hasWineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Variety has wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineAcidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Acidity score, defined as wine's “pucker” or tartness; it's what makes a wine refreshing and your tongue salivate and want another sip [from 1-5]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wine acidity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Body score, defined as the richness and weight of the wine in your mouth [from 1-5]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wine body"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The name of the product made by the winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wine name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#winePrice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the Wine price in EUR"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wine price"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the average rating given to the wine by the users [from 1-5]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wine rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineReviews",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the number of users that reviewed the wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wine reviews"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineVintage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Year in which the grapes were harvested"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wine vintage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineryName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Winery name that produces the Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Winery name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+} ]

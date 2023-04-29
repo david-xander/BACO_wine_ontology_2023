@@ -1,0 +1,37 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "baco-spanish-wine-ontology:Food" "baco-spanish-wine-ontology:GrapeVariety" "baco-spanish-wine-ontology:MediumBodyWine" "baco-spanish-wine-ontology:Region" "baco-spanish-wine-ontology:Rating" "baco-spanish-wine-ontology:EconomicWine" "baco-spanish-wine-ontology:HighAcidityWine" "baco-spanish-wine-ontology:OverTenThousendReviewsWine" "baco-spanish-wine-ontology:LightBodyWine" "baco-spanish-wine-ontology:NumberOfReviews" "baco-spanish-wine-ontology:RedMeat" "baco-spanish-wine-ontology:PairedWithSalmonWine" "baco-spanish-wine-ontology:PairedWithRedMeatWine" "baco-spanish-wine-ontology:WineType" "baco-spanish-wine-ontology:WineEntity" "baco-spanish-wine-ontology:UnderFortyReviewsWine" "baco-spanish-wine-ontology:PricyWine" "baco-spanish-wine-ontology:ExpensiveWine" "baco-spanish-wine-ontology:Price" "baco-spanish-wine-ontology:Winery" "baco-spanish-wine-ontology:VeryHighRatedWine" "baco-spanish-wine-ontology:Pairing" "baco-spanish-wine-ontology:LowAcidityWine" "baco-spanish-wine-ontology:Body" "baco-spanish-wine-ontology:Acidity" "baco-spanish-wine-ontology:Fish" "baco-spanish-wine-ontology:CompleteBodyWine" "baco-spanish-wine-ontology:SeaFood" "baco-spanish-wine-ontology:HighRatedWine" "baco-spanish-wine-ontology:Salmon" "baco-spanish-wine-ontology:Wine" "baco-spanish-wine-ontology:ExpensiveWineRegion" ; /*classes style*/
+	"baco-spanish-wine-ontology:PairedWithRedMeatWine" -> "baco-spanish-wine-ontology:Pairing" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:HighRatedWine" -> "baco-spanish-wine-ontology:Rating" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:SeaFood" -> "baco-spanish-wine-ontology:Food" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:Rating" -> "baco-spanish-wine-ontology:Wine" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:RedMeat" -> "baco-spanish-wine-ontology:Food" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:Fish" -> "baco-spanish-wine-ontology:SeaFood" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:Pairing" -> "baco-spanish-wine-ontology:Wine" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:VeryHighRatedWine" -> "baco-spanish-wine-ontology:Rating" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:CompleteBodyWine" -> "baco-spanish-wine-ontology:Body" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:Salmon" -> "baco-spanish-wine-ontology:Fish" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:Body" -> "baco-spanish-wine-ontology:Wine" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:Acidity" -> "baco-spanish-wine-ontology:Wine" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:Price" -> "baco-spanish-wine-ontology:Wine" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:HighAcidityWine" -> "baco-spanish-wine-ontology:Acidity" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:Food" -> "baco-spanish-wine-ontology:WineEntity" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:MediumBodyWine" -> "baco-spanish-wine-ontology:Body" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:LowAcidityWine" -> "baco-spanish-wine-ontology:Acidity" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:PairedWithSalmonWine" -> "baco-spanish-wine-ontology:Pairing" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:Wine" -> "baco-spanish-wine-ontology:WineEntity" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:PricyWine" -> "baco-spanish-wine-ontology:Price" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:NumberOfReviews" -> "baco-spanish-wine-ontology:Wine" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:GrapeVariety" -> "baco-spanish-wine-ontology:WineEntity" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:OverTenThousendReviewsWine" -> "baco-spanish-wine-ontology:NumberOfReviews" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:ExpensiveWineRegion" -> "baco-spanish-wine-ontology:Region" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:WineType" -> "baco-spanish-wine-ontology:WineEntity" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:UnderFortyReviewsWine" -> "baco-spanish-wine-ontology:NumberOfReviews" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:Winery" -> "baco-spanish-wine-ontology:WineEntity" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:Region" -> "baco-spanish-wine-ontology:WineEntity" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:LightBodyWine" -> "baco-spanish-wine-ontology:Body" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:ExpensiveWine" -> "baco-spanish-wine-ontology:Price" [ label = "rdfs:subClassOf" ];
+	"baco-spanish-wine-ontology:EconomicWine" -> "baco-spanish-wine-ontology:Price" [ label = "rdfs:subClassOf" ];
+
+}
