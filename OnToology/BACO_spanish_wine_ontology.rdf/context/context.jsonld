@@ -1,0 +1,222 @@
+{
+  "@context" : {
+    "entityName" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#entityName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "winePrice" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#winePrice",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "NumberOfReviews" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#NumberOfReviews"
+    },
+    "HighRatedWine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#HighRatedWine"
+    },
+    "PairedWithSalmonWine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#PairedWithSalmonWine"
+    },
+    "WineType" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineType"
+    },
+    "Winery" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Winery"
+    },
+    "regionName" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#regionName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Fish" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Fish"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/elements/1.1/license"
+    },
+    "PricyWine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#PricyWine"
+    },
+    "Food" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Food"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "wineReviews" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineReviews",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "typeName" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#typeName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Body" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Body"
+    },
+    "producedBy" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#producedBy",
+      "@type" : "@id"
+    },
+    "wineBody" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineBody"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "wineVintage" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineVintage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "ExpensiveWine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#ExpensiveWine"
+    },
+    "UnderFortyReviewsWine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#UnderFortyReviewsWine"
+    },
+    "Pairing" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Pairing"
+    },
+    "CompleteBodyWine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#CompleteBodyWine"
+    },
+    "hasVariety" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#hasVariety",
+      "@type" : "@id"
+    },
+    "Price" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Price"
+    },
+    "grapeVarietyName" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#grapeVarietyName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasWine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#hasWine",
+      "@type" : "@id"
+    },
+    "foodName" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#foodName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "producedIn" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#producedIn",
+      "@type" : "@id"
+    },
+    "hasWineType" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#hasWineType",
+      "@type" : "@id"
+    },
+    "makes" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#makes",
+      "@type" : "@id"
+    },
+    "wineryName" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineryName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "LowAcidityWine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#LowAcidityWine"
+    },
+    "Salmon" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Salmon"
+    },
+    "allocateWinery" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#allocateWinery",
+      "@type" : "@id"
+    },
+    "wineRating" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineRating"
+    },
+    "Rating" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Rating"
+    },
+    "RedMeat" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#RedMeat"
+    },
+    "PairedWithRedMeatWine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#PairedWithRedMeatWine"
+    },
+    "producesIn" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#producesIn",
+      "@type" : "@id"
+    },
+    "ExpensiveWineRegion" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#ExpensiveWineRegion"
+    },
+    "HighAcidityWine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#HighAcidityWine"
+    },
+    "EconomicWine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#EconomicWine"
+    },
+    "wineAcidity" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineAcidity"
+    },
+    "Acidity" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Acidity"
+    },
+    "MediumBodyWine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#MediumBodyWine"
+    },
+    "WineEntity" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#WineEntity"
+    },
+    "wineName" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#wineName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isPairedWith" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#isPairedWith",
+      "@type" : "@id"
+    },
+    "VeryHighRatedWine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#VeryHighRatedWine"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "LightBodyWine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#LightBodyWine"
+    },
+    "allocateWine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#allocateWine",
+      "@type" : "@id"
+    },
+    "SeaFood" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#SeaFood"
+    },
+    "Region" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Region"
+    },
+    "OverTenThousendReviewsWine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#OverTenThousendReviewsWine"
+    },
+    "GrapeVariety" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#GrapeVariety"
+    },
+    "varietyHasWine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#varietyHasWine",
+      "@type" : "@id"
+    },
+    "pairsWith" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#pairsWith",
+      "@type" : "@id"
+    },
+    "Wine" : {
+      "@id" : "https://w3id.org/def/BACO_wine_ontology_2023#Wine"
+    }
+  }
+}
