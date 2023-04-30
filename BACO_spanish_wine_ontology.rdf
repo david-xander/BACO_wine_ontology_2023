@@ -17,11 +17,11 @@
         <dc:creator>Pablo Pimàs Verge</dc:creator>
         <dc:description>BACO Spanish Wine Ontology, by David Delgado Camacho and Pablo Pimàs Verge based on the  Kagle: Spanish Wine Quality Dataset from Fedesoriano.</dc:description>
         <dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license>
-        <dc:questions>- What region produces the most expensive wines?
-- What body does an specific wine has in terms of complete, light or medium?
-- Which are the most economic wines?
-- Which wines has been reviews over ten thousend times already?
-- Which wines has been paired with Salmon?</dc:questions>
+        <dc:questions>A) What region produces the most expensive wines?
+B) What body does an specific wine has in terms of complete, light or medium?
+C) Which are the most economic wines?
+D) Which wines has been reviews over ten thousend times already?
+E) Which wines has been paired with Salmon?</dc:questions>
         <dc:title>BACO Wine ontology</dc:title>
     </owl:Ontology>
     
@@ -417,7 +417,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/BACO_wine_ontology_2023#wineReviews">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment>Represents the number of users that reviewed the wine</rdfs:comment>
         <rdfs:label>Wine reviews</rdfs:label>
     </owl:DatatypeProperty>
@@ -1339,7 +1339,7 @@
         <baco-spanish-wine-ontology:wineName>Solera India Oloroso Rare Sherry</baco-spanish-wine-ontology:wineName>
         <baco-spanish-wine-ontology:winePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">189.99</baco-spanish-wine-ontology:winePrice>
         <baco-spanish-wine-ontology:wineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</baco-spanish-wine-ontology:wineRating>
-        <baco-spanish-wine-ontology:wineReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">74</baco-spanish-wine-ontology:wineReviews>
+        <baco-spanish-wine-ontology:wineReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">74</baco-spanish-wine-ontology:wineReviews>
         <rdfs:comment>Solera India Oloroso Rare Sherry is a unique and rare wine from the Jerez region in Spain. It is produced using the Solera aging system, which blends younger and older wines to achieve a consistent and complex flavor profile. This particular sherry is known for its rich and nutty taste, with hints of dried fruits and spices. It is a prized and sought-after wine for those who appreciate the craftsmanship and tradition of Jerez winemaking.</rdfs:comment>
         <rdfs:label>Solera India Oloroso Rare Sherry</rdfs:label>
     </owl:NamedIndividual>
@@ -1450,7 +1450,7 @@
         <baco-spanish-wine-ontology:wineName>Unico</baco-spanish-wine-ontology:wineName>
         <baco-spanish-wine-ontology:winePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">872.47</baco-spanish-wine-ontology:winePrice>
         <baco-spanish-wine-ontology:wineRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</baco-spanish-wine-ontology:wineRating>
-        <baco-spanish-wine-ontology:wineReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">940</baco-spanish-wine-ontology:wineReviews>
+        <baco-spanish-wine-ontology:wineReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">940</baco-spanish-wine-ontology:wineReviews>
         <baco-spanish-wine-ontology:wineVintage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1994</baco-spanish-wine-ontology:wineVintage>
         <rdfs:comment>Unico is a prestigious red wine from Spain&apos;s Ribera del Duero region. Produced by Vega Sicilia, it is a blend of Tempranillo and Cabernet Sauvignon grapes aged for several years in oak barrels. The wine is known for its complex aromas and flavors, as well as its ability to age gracefully. It is highly sought after by collectors and wine enthusiasts.</rdfs:comment>
         <rdfs:label>Unico</rdfs:label>
@@ -1520,6 +1520,12 @@
     <rdf:Description rdf:about="http://www.semanticweb.org//baco-wine-ontology/food">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
+    <rdf:Description rdf:about="#w">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#reviews">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org//baco-wine-ontology/p">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
@@ -1535,14 +1541,107 @@
     <rdf:Description rdf:about="http://www.semanticweb.org//baco-wine-ontology/acidity">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org//baco-wine-ontology/reviews">
+    <rdf:Description rdf:about="#wine">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org//baco-wine-ontology/wine">
+    <rdf:Description rdf:about="#price">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org//baco-wine-ontology/region">
+    <rdf:Description rdf:about="#region">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Classifies Wine according to its price into Pricy</rdfs:comment>
+        <rdfs:label>PricyWineRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#winePrice"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/price"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/price"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/price"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#PricyWine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
@@ -1915,65 +2014,8 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment>Classifies Wine according to number of reviews</rdfs:comment>
-        <rdfs:label>TenThousandReviewsWineRule</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/w"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#wineReviews"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/w"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/reviews"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/reviews"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment>ExpensiveWineRegion</rdfs:comment>
-        <rdfs:label>Classifies Regions into ExpensiveWineRegion</rdfs:label>
+        <rdfs:comment>Classifies Regions into ExpensiveWineRegion</rdfs:comment>
+        <rdfs:label>ExpensiveWineRegion</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -1982,8 +2024,8 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#winePrice"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/wine"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/price"/>
+                        <swrl:argument1 rdf:resource="#wine"/>
+                        <swrl:argument2 rdf:resource="#price"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1993,8 +2035,8 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#producedIn"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/wine"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/region"/>
+                                <swrl:argument1 rdf:resource="#wine"/>
+                                <swrl:argument2 rdf:resource="#region"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -2007,7 +2049,7 @@
                                         <swrl:arguments>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/price"/>
+                                                <rdf:first rdf:resource="#price"/>
                                                 <rdf:rest>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
@@ -2033,7 +2075,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#ExpensiveWineRegion"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/region"/>
+                        <swrl:argument1 rdf:resource="#region"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -2153,6 +2195,63 @@
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
             </rdf:Description>
         </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Classifies Wine according to number of reviews</rdfs:comment>
+        <rdfs:label>TenThousandReviewsWineRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
+                        <swrl:argument1 rdf:resource="#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#wineReviews"/>
+                                <swrl:argument1 rdf:resource="#w"/>
+                                <swrl:argument2 rdf:resource="#reviews"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="#reviews"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
@@ -2447,99 +2546,6 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#ExpensiveWine"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment>Classifies Wine according to its price into Pricy</rdfs:comment>
-        <rdfs:label>PricyWineRule</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#Wine"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#winePrice"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/price"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/price"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
-                                                <swrl:arguments>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:resource="http://www.semanticweb.org//baco-wine-ontology/price"/>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</rdf:first>
-                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </swrl:arguments>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/def/BACO_wine_ontology_2023#PricyWine"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org//baco-wine-ontology/p"/>
                     </rdf:Description>
                 </rdf:first>
